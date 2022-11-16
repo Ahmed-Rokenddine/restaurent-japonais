@@ -5,73 +5,453 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    
 </head>
 <body>
     <div  class="header"> 
         <nav>
-            <div class="logo"><img src="img/Logo.png"
-                width="20%";
-                height="3%"; ></div>
+            <div class="logo"><img class="logo2" src="img/Logo.png" ></div>
             
-                
-           
-            <ul>
-                <li><a href="Index.html">Acceuil</a></li>
-                <li><a href="carte.html">Carte</a></li>
-                <li><a href="A propos.html">A propos</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+            <div class="bx" onclick="sidebar()">
+                <img src="img/clipart993015.png" alt="Food-Image" width="5%">
+            </div>  
+            <div id="closer" class="closed" onclick="closebar()">X</div>
+            <ul id="nav-bar" class="navbar">
+                <li><a href="index.html">Acceuil</a></li> -|-
+                <li><a href="carte.html">Carte</a></li> -|-
+                <li><a href="A propos.html">A propos</a></li> -|-
+                <li><a href="Contact.html">Contact</a></li> 
             </ul>
         </nav>
     </div>
     <div class="hero">
-        <img src="img/first.png" 
-        width="1520px" ;
+    
+        <img class="background" src="img/first.png" 
+        width="100%" ;
+        height="auto";>
+        <img class="Hitaka" src="img/samurai_cat_1.png"
+        width= "30%";
+        height= "auto";  >   
+    </div>
+    
+    
+    
+    <div class="title"><h1>Menu</h1></div>
+    <div class="content">
+     <div class="list">
+         <li data-filter=".All">All</li>
+         <li data-filter=".Sushi">Sushi</li>
+         <li data-filter=".Obento">Obento</li>
+         <li data-filter=".Plats">Plats</li>
+     </div>
+
+
+            <div class="box_flex">
+
+                <div class="box All Sushi">
+                    <div class="box_img">
+                        <img src="img/Plat-1.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Sushi</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="sushi" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="box All Sushi">
+                    <div class="box_img">
+                        <img src="img/Plat-2.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Sushi</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="sushi" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="box All Sushi">
+                    <div class="box_img">
+                        <img src="img/Plat-3.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Sushi</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="sushi" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="box All Sushi">
+                    <div class="box_img">
+                        <img src="img/Plat-4.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Sushi</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="sushi" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="box All Sushi">
+                    <div class="box_img">
+                        <img src="img/Plat-5.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Sushi</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="sushi" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="box All Sushi">
+                    <div class="box_img">
+                        <img src="img/Plat-6.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Sushi</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="sushi" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="box All Obento">
+                    <div class="box_img">
+                        <img src="img/Plat-7.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Obento</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="Obento" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="box All Obento">
+                    <div class="box_img">
+                        <img src="img/Plat-8.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Obento</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="Obento" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="box All Obento">
+                    <div class="box_img">
+                        <img src="img/Plat-9.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Obento</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="Obento" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="box All Obento">
+                    <div class="box_img">
+                        <img src="img/Plat-10.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Obento</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="Obento" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="box All Obento">
+                    <div class="box_img">
+                        <img src="img/Plat-11.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Obento</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="Obento" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="box All Obento">
+                    <div class="box_img">
+                        <img src="img/Plat-12.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Obento</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="Obento" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="box All Plats">
+                    <div class="box_img">
+                        <img src="img/Plat-13.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Plat</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="Plat" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="box All Plats">
+                    <div class="box_img">
+                        <img src="img/Plat-14.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Plat</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="Plat" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="box All Plats">
+                    <div class="box_img">
+                        <img src="img/Plat-15.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Plat</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="Plat" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="box All Plats">
+                    <div class="box_img">
+                        <img src="img/Plat-16.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Plat</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="Plat" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="box All Plats">
+                    <div class="box_img">
+                        <img src="img/Plat-17.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Plat</h3>
+                        <hr>
+                        <div class="first1">
+                            <section>$28.00</section>
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="Plat" placeholder="27" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="box All Plats">
+                    <div class="box_img">
+                        <img src="img/Plat-18.jpg" alt="Food-Image">
+                    </div>
+                    <div class="text">
+                        <h3>Plat</h3>
+                        <hr>
+                        <div class="first1">
+                        <section>$28.00</section>
+                        
+                            <div class="counter">
+                                <span class="down" onClick='decreaseCount(event, this)' >-</span>
+                                <input type="text" name="laptop" id="Plat" placeholder="28" value="0" >
+                                <span class="up" onClick='increaseCount(event, this)'>+</span>
+                              </div>
+    
+                          
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    
+    
+       
+        
+   
+    
+    
+  
+  
+</div>
+
+
+    
+<div id ="side"class="btn">
+    <img onclick="myFunction()" src="img/book_now_btn.png" alt="Reservations">
+  </div>
+  <div id="outside" class="cal">
+    <div class="ttl"> Votre commande  </div>
+    <div class="close">
+        
+      <img onclick="youFunction()"src="img/book_now_close.png" alt="Close" >
+    </div>
+    <div class="hero">
+        <form class="ttl3"name="platform">
+            <textarea id="saveServer" type="text" rows="8" cols="auto" name="total" value="0"></textarea>
+          </form>
+        <form class="ttl2" name="listForm">
+            Total:<input type="text" size="2" name="total" value="0"/> £
+        </form>
+        <button class="button-30" role="button" onclick="return Validé()">Valider</button>
+    </div>
+  </div>
+      
+ <div class="hero">
+    <div class="hero"> 
+        <img src="img/Footer.png" alt="The end of the page"
+        width="100%" ;
         height="auto" ;>
     </div>
-    <div class="Hitaka">
-        <img src="img/samurai_cat_1.png"
-        width= "500px";
-        height= "500px";
-        >   
+    <div >
+        <img class="git"src="img/Gif.gif" alt="Decoration-Sword"
+        width="100%"
+        height="67%">
+
     </div>
-    <div class="sidepic2">
-    </div>
-    <div class="title">
-        <h1>Menu</h1>
-    </div>
-    <div class="e25"></div>
-    <div class="e26">All</div>
-    <div class="e27">Salade </div>
-    <div class="e28">Obento </div>
-    <div class="e29">Plats</div>
-    <div class="e30"></div>
-    <div class="e31"></div>
-    <div class="e32"></div>
-    <div class="e33">Valider</div>
-    <div class="e34"></div>
-      
     
-      
-            <div class="footer"> 
-                <img src="img/Footer.png"
-                width="1520px" ;
-                height="100%" ;>
-            </div>
-            <div class="git"></div>
-            <div class="footerbg"></div>
-            <div class="footermail">
-                <h3>Hitaka @gmail.com</h3>
-            </div>
-            <div class="rights">
-                <h3>All Rights Reserved by HITAKA</h3>
-            </div>
-            <div class="number">
-                <h3>023104985123</h3>
-            </div>
-            <div  class="facebook"> </div>
-            <div  class="instagram"> </div>
-            <div  class="twitter"> </div>
+    <div class="footermail">
+        <h3>Hitaka @gmail.com</h3>
+    </div>
+    <div class="rights">
+        <h3>All Rights Reserved by HITAKA © 2022</h3>
+    </div>
+    <div class="number">
+        <h3>023104985123</h3>
+    </div>
+    <div  > 
+        <img class="facebook" src="img/Facebook.png" alt="Facebook-Image"> </div>
+    <div  > <img class="instagram" src="img/instagram.png" alt="Instagram-Image"> </div>
+    <div  > <img class="twitter" src="img/Tweetter.png" alt="Twitter-Image"></div>
+</div> 
+     <!--link to js--->
+	<script type="text/javascript" src="js/script.js"></script>  
           
 </body>
 </html>
